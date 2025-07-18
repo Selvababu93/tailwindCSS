@@ -5,3 +5,5 @@
   --text-10xl: 6.75rem;
   --color-my-yellow: #fff44f;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,31 +12,31 @@
     />
     <title>Tailwind Basics</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-blue-200">TailwindCSS Basics</h1>
-    <!-- Typography -->
-    <h2>Typography font family</h2>
+  <body class="bg-white dark:bg-slate-900">
+    <!-- <h1 class="text-3xl font-bold underline bg-blue-200">TailwindCSS Basics</h1>
+     Typography -->
+    <!-- <h2>Typography font family</h2>
     <p class="font-sans">This text uses Sans-serif font family</p>
     <p class="font-serif">This text uses Serif font family</p>
     <p class="font-mono">This text uses Mono font family</p>
     <p class="font-bebas">
       This text uses Bebas font family and this is custom font
-    </p>
+    </p> -->
 
-    <hr />
-    <!-- Text Size -->
-    <h2>Text size classes</h2>
+    <!-- <hr />
+	 Text Size -->
+    <!-- <h2>Text size classes</h2>
     <p class="text-xs">This is extra small text xm class</p>
     <p class="text-sm">This is small text sm class</p>
     <p class="text-base">This is base text base class</p>
     <p class="text-lg">This is large text lg class</p>
-    <p class="text-xl">This is extra large text xl class</p>
+    <p class="text-xl">This is extra large text xl class</p> -->
 
     <!-- responsive  -->
-    <p class="text-base md:text-lg lg:text-xl">This is Responsive text</p>
+    <!-- <p class="text-base md:text-lg lg:text-xl">This is Responsive text</p> -->
 
     <!-- Extra large sizes -->
-    <p class="text-2xl">This is extra large size text-2xl</p>
+    <!-- <p class="text-2xl">This is extra large size text-2xl</p>
     <p class="text-3xl">This is extra large size text-3xl</p>
     <p class="text-4xl">This is extra large size text-4xl</p>
     <p class="text-5xl">This is extra large size text-5xl</p>
@@ -45,11 +45,11 @@
       Below is custom size we can add custom sizes also for text like how we did
       for font family add like =this in input.css @theme{ --text-10xl(we can use
       any name) : 6.75rem }
-    </p>
+    </p> -->
     <!-- <p class="text-10xl">This is custom text size</p> -->
 
     <!-- Other font classes -->
-    <h1>Other font classes</h1>
+    <!-- <h1>Other font classes</h1>
     <h1 class="text-3xl font-bold">What is Lorem Ipsum?</h1>
     Lorem Ipsum is simply <span class="font-bold"> dummy</span> text of the
     printing and typesetting industry.
@@ -101,10 +101,10 @@
       <p class="text-gray-500">This is text color</p>
       <p class="text-gray-600">This is text color</p>
       <p class="text-gray-700">This is text color</p>
-    </div>
+    </div> -->
 
     <!-- Padding & Margin -->
-    <div class="bg-slate-600">
+    <!-- <div class="bg-slate-600">
       <p class="text-white">Padding Example</p>
       <button class="text-white p-2 bg-red-300">Click me</button>
       <button class="text-white px-2 bg-black">Click me</button>
@@ -112,10 +112,10 @@
       <button class="text-white bg-black m-2">Click me</button>
 
       <button class="text-white bg-red-500 mx-2">Click me</button>
-    </div>
+    </div> -->
 
     <!-- Border & Hover -->
-    <div class="bg-slate-300">
+    <!-- <div class="bg-slate-300">
       <p>Border and Hover</p>
 
       <button
@@ -123,10 +123,10 @@
       >
         Click Me
       </button>
-    </div>
+    </div> -->
 
     <!-- Layout -->
-    <div
+    <!-- <div
       class="container bg-slate-500 border-2 rounded-lg border-yellow-300 mx-auto mt-10"
     >
       <h1 class="text-white text-xl pt-2 pl-3">JVL Code TailwindCSS</h1>
@@ -148,14 +148,14 @@
           Read more
         </button>
       </div>
-    </div>
+    </div> -->
 
     <!-- Responsive Classes -->
-    <div class="bg-gray-400 md:bg-red-400 lg:bg-green-500 mt-5 mb-10">
+    <!-- <div class="bg-gray-400 md:bg-red-400 lg:bg-green-500 mt-5 mb-10">
       <p>Background color changer Responsive classes</p>
-    </div>
+    </div> -->
     <!-- Flexbox -->
-    <h1>FlexBox</h1>
+    <!-- <h1>FlexBox</h1>
     <p>Justify</p>
     <div
       class="bg-slate-800 m-5 container flex flex-row justify-around md:flex-row"
@@ -176,11 +176,11 @@
     <div class="container bg-slate-500 flex flex-row">
       <div class="bg-green-500 p-2 flex-grow">Content 1</div>
       <div class="bg-green-500 p-2 flex-grow">Content 2</div>
-      <div class="bg-green-500 p-2 flex-grow">Content 3</div>
-    </div>
+      <div class="bg-green-500 p-2 flex-grow">Content 3</div> 
+    </div> -->
 
     <!-- Grid Layout -->
-    <h1>Grid Layout</h1>
+    <!-- <h1>Grid Layout</h1>
     <div class="container bg-slate-500 grid grid-cols-3 gap-2.5">
       <div class="bg-green-500 p-2 flex-grow">Content 1</div>
       <div class="bg-green-500 p-2 flex-grow">Content 2</div>
@@ -191,9 +191,19 @@
       <div class="bg-green-500 p-2 flex-grow">Content 7</div>
       <div class="bg-green-500 p-2 flex-grow">Content 8</div>
       <div class="bg-green-500 p-2 flex-grow">Content 9</div>
-    </div>
+    </div> -->
 
     <!-- Dark Mode -->
-    <h1>Dark mode</h1>
+    <div>
+      <h1>Dark mode</h1>
+      <button class="bg-black text-white dark:bg-white rounded">
+        Dark Mode
+      </button>
+      <!-- Extend options -->
+      <div>
+        <!-- configuration -->
+        <button></button>
+      </div>
+    </div>
   </body>
 </html>
