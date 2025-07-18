@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tailwind Basics</title>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline bg-blue-200">TailwindCSS Basics</h1>
+    <!-- Typography -->
+    <h2>Typography font family</h2>
+    <p class="font-sans">This text uses Sans-serif font family</p>
+    <p class="font-serif">This text uses Serif font family</p>
+    <p class="font-mono">This text uses Mono font family</p>
+    <p class="font-bebas">
+      This text uses Bebas font family and this is custom font
+    </p>
+
+    <hr />
+    <!-- Text Size -->
+    <h2>Text size classes</h2>
+    <p class="text-xs">This is extra small text xm class</p>
+    <p class="text-sm">This is small text sm class</p>
+    <p class="text-base">This is base text base class</p>
+    <p class="text-lg">This is large text lg class</p>
+    <p class="text-xl">This is extra large text xl class</p>
+
+    <!-- responsive  -->
+    <p class="text-base md:text-lg lg:text-xl">This is Responsive text</p>
+
+    <!-- Extra large sizes -->
+    <p class="text-2xl">This is extra large size text-2xl</p>
+    <p class="text-3xl">This is extra large size text-3xl</p>
+    <p class="text-4xl">This is extra large size text-4xl</p>
+    <p class="text-5xl">This is extra large size text-5xl</p>
+    <p>we can go up to 10xl</p>
+    <p>
+      Below is custom size we can add custom sizes also for text like how we did
+      for font family add like =this in input.css @theme{ --text-10xl(we can use
+      any name) : 6.75rem }
+    </p>
+    <!-- <p class="text-10xl">This is custom text size</p> -->
+
+    <!-- Other font classes -->
+    <h1>Other font classes</h1>
+    <h1 class="text-3xl font-bold">What is Lorem Ipsum?</h1>
+    Lorem Ipsum is simply <span class="font-bold"> dummy</span> text of the
+    printing and typesetting industry.
+    <span class="leading-relaxed"
+      >Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.</span
+    >
+
+    <hr />
+    <h1>Colors</h1>
+    <div class="h-9 bg-green-50"></div>
+    <div class="h-9 bg-green-100"></div>
+    <div class="h-9 bg-green-200"></div>
+    <div class="h-9 bg-green-400"></div>
+    <div class="h-9 bg-green-500"></div>
+    <div class="h-9 bg-green-600"></div>
+    <div class="h-9 bg-green-700"></div>
+    <div class="h-9 bg-green-800"></div>
+    <div class="h-9 bg-green-900"></div>
+
+    <hr />
+
+    <div class="h-9 bg-yellow-100"></div>
+    <div class="h-9 bg-yellow-200"></div>
+    <div class="h-9 bg-yellow-300"></div>
+    <div class="h-9 bg-yellow-400"></div>
+    <div class="h-9 bg-yellow-500"></div>
+    <div class="h-9 bg-yellow-600"></div>
+    <div class="h-9 bg-yellow-700"></div>
+    <div class="h-9 bg-yellow-800"></div>
+
+    <h1>Custom color</h1>
+    <div class="h-12 bg-black">
+      <p class="text-3xl text-my-yellow">This is my custom color</p>
+    </div>
+
+    <div>
+      <p class="text-gray-50">This is text color</p>
+      <p class="text-gray-100">This is text color</p>
+      <p class="text-gray-200">This is text color</p>
+      <p class="text-gray-300">This is text color</p>
+      <p class="text-gray-400">This is text color</p>
+      <p class="text-gray-500">This is text color</p>
+      <p class="text-gray-600">This is text color</p>
+      <p class="text-gray-700">This is text color</p>
+    </div>
+
+    <!-- Padding & Margin -->
+    <div class="bg-slate-600">
+      <p class="text-white">Padding Example</p>
+      <button class="text-white p-2 bg-red-300">Click me</button>
+      <button class="text-white px-2 bg-black">Click me</button>
+      <p class="text-white">Margin Example</p>
+      <button class="text-white bg-black m-2">Click me</button>
+
+      <button class="text-white bg-red-500 mx-2">Click me</button>
+    </div>
+
+    <!-- Border & Hover -->
+    <div class="bg-slate-300">
+      <p>Border and Hover</p>
+
+      <button
+        class="text-black bg-amber-200 border-2 border-red-500 p-2 rounded-3xl hover:bg-red-700"
+      >
+        Click Me
+      </button>
+    </div>
+
+    <!-- Layout -->
+    <div
+      class="container bg-slate-500 border-2 rounded-lg border-yellow-300 mx-auto mt-10"
+    >
+      <h1 class="text-white text-xl pt-2 pl-3">JVL Code TailwindCSS</h1>
+      <p class="p-3 text-emerald-400">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+        generators on the Internet tend to repeat predefined chunks as
+        necessary, making this the first true generator on the Internet. It uses
+        a dictionary of over 200 Latin words, combined with a handful of model
+        sentence structures, to generate Lorem Ipsum which looks reasonable. The
+        generated Lorem Ipsum is therefore always free from repetition, injected
+        humour, or non-characteristic words etc.
+      </p>
+      <div class="flex justify-center">
+        <button class="bg-amber-500 text-cyan-400 border rounded-lg p-2 my-2">
+          Read more
+        </button>
+      </div>
+    </div>
+
+    <!-- Responsive Classes -->
+    <div class="bg-gray-400 md:bg-red-400 lg:bg-green-500 mt-5 mb-10">
+      <p>Background color changer Responsive classes</p>
+    </div>
+    <!-- Flexbox -->
+    <h1>FlexBox</h1>
+    <p>Justify</p>
+    <div
+      class="bg-slate-800 m-5 container flex flex-row justify-around md:flex-row"
+    >
+      <div class="bg-green-400">Content 1</div>
+      <div class="bg-green-400">Content 2</div>
+      <div class="bg-green-400">Content 3</div>
+    </div>
+
+    <h1>Align-item</h1>
+    <div class="container bg-slate-500 flex flex-col items-center">
+      <div class="bg-green-500 p-2">Content 1</div>
+      <div class="bg-green-500 p-2">Content 2</div>
+      <div class="bg-green-500 p-2">Content 3</div>
+    </div>
+
+    <h1>Flex grow</h1>
+    <div class="container bg-slate-500 flex flex-row">
+      <div class="bg-green-500 p-2 flex-grow">Content 1</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 2</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 3</div>
+    </div>
+
+    <!-- Grid Layout -->
+    <h1>Grid Layout</h1>
+    <div class="container bg-slate-500 grid grid-cols-3 gap-2.5">
+      <div class="bg-green-500 p-2 flex-grow">Content 1</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 2</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 3</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 4</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 5</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 6</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 7</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 8</div>
+      <div class="bg-green-500 p-2 flex-grow">Content 9</div>
+    </div>
+
+    <!-- Dark Mode -->
+    <h1>Dark mode</h1>
+  </body>
+</html>

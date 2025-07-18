@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue", "sans-serif";
+  --text-10xl: 6.75rem;
+  --color-my-yellow: #fff44f;
+}
