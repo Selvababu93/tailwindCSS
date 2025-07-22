@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>TailwindCSS Intermediate</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="text-xl text-bold text-green-800">TailwindCSS Intermediate</h1>
+    </div>
+    <!-- Typography -->
+    <!-- Line Height -->
+    <div>
+      <h3 class="text-bold underline">Line Height</h3>
+      <div class="mx-4">
+        <p class="leading-loose">This paragraph has relaxed line Height</p>
+        <p class="leading-tight">
+          This paragraph has no extra spacing between lines
+        </p>
+        <p class="leading-normal">This paragraph has any height</p>
+      </div>
+    </div>
+    <br />
+    <!-- Tracking -->
+    <div>
+      <h3 class="text-bold underline">Letter-spacing</h3>
+      <div class="mx-4">
+        <p class="tracking-widest">Letter spacing of widest</p>
+        <p class="tracking-wide">Letter spacing of wide</p>
+        <p class="tracking-tight">Letter spacing of tight</p>
+        <p class="tracking-tighter">Letter spacing of tighter</p>
+      </div>
+    </div>
+
+    <br />
+    <!-- Text-Alignment -->
+    <div>
+      <h3 class="textbold underline">Text-Alignment</h3>
+      <div class="mx-4">
+        <p class="text-left">This paragraph is in left</p>
+        <p class="text-right">This paragraph is in right</p>
+        <p class="text-center">This paragraph is in Center</p>
+        <p class="text-justify">
+          This is used text-justify to ensure redability according to display
+          size
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <!-- Truncate -->
+    <div>
+      <h3 class="text-bold underline">
+        Truncate, Line Clamp, Whitespace No Wrap
+      </h3>
+      <div class="mx-4">
+        <p class="w-64 truncate">
+          This is a very long sentence that will be truncated with an ellipsis
+        </p>
+      </div>
+    </div>
+    <br />
+    <!-- Line Clamp -->
+    <div>
+      <h3 class="text-bold underline">Line Clamp</h3>
+      <div class="mx-4">
+        <p class="line-clamp-2 w-129">
+          This is a long sentence that will be truncated with an ellipsis after
+          two lines Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- Whitespace Nowrap -->
+    <div>
+      <h1 class="text-bold underline">Whitespace Nowrap</h1>
+      <div class="mx-4">
+        <p class="whitespace-nowrap">
+          This text will stay in a single line never wrap
+        </p>
+      </div>
+    </div>
+
+    <!-- 2.Colors -->
+    <!-- Opacity -->
+    <div>
+      <h1 class="text-bold underline">Opacity</h1>
+      <div class="mx-4 bg-red-600/50">
+        this is div with background color red with 50% opacity
+      </div>
+      <!-- Text-Opacity -->
+      <div class="text-blue-800/70">
+        this text is in blue but slightly transparent
+      </div>
+    </div>
+    <br />
+    <!-- Spacing -->
+    <!-- Padding -->
+    <div>
+      <h1>Responsive padding</h1>
+      <div class="mx-4 bg-gray-500 px-6 py-4">
+        example padding This div has horizontal padding ('px-6'). vertical
+        padding ('py-4')
+      </div>
+
+      <div class="bg-blue-500 p-4 md:p-8 lg:p-8">
+        this div has different sizes for mobile (p-4) , medium (p-8) and large
+        (p-12)
+      </div>
+    </div>
+    <br />
+    <!-- Negative margib -->
+    <!-- Negative margin is used to move element in opposite direction or want to put some elelement in other div  -->
+    <!-- Space Classes -->
+    <div>
+      <h1 class="text-bold underline">Space classes</h1>
+      <div class="flex flex-col mx-4 space-y-3">
+        <div class="bg-amber-400">Div 1</div>
+        <div class="bg-amber-400">Div 2</div>
+        <div class="bg-amber-400">Div 3</div>
+      </div>
+    </div>
+    <br />
+    <!-- Borderes & Rounded Corners -->
+    <div>
+      <h1 class="text-bold underline">Borders & Rounded corners</h1>
+      <div class="mx-4">
+        <button class="border rounded-full">button with border</button>
+        <div class="border-t-3 border-b-3">
+          this div has top and bottom border
+        </div>
+        <div class="border-[9px]">This div has custom border width</div>
+        <img
+          class="rounded-full mx-auto m-3 h-70 w-70"
+          src="https://picsum.photos/200/300"
+          alt=""
+        />
+        <div class="p-2 shadow-sm bg-white">
+          This div has small shadow, small depth
+        </div>
+        <div class="p-2 shadow-lg bg-white">
+          This div has large shadow and larger depth
+        </div>
+        <div class="shadow-inner p-4 bg-gray-400">
+          This div has inner shadow
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Focus States -->
+    <div>
+      <input class="border" type="text" placeholder="Enter text" />
+      <input
+        class="focus:ring-4 focus:ring-amber-300"
+        type="text"
+        placeholder="Enter text 2"
+      />
+    </div>
+    <br />
+    <!-- Responsive Layout -->
+    <div>
+      <h3 class="text-bold underline">Responsive Layout</h3>
+      <div class="px-4">
+        <div class="container flex-col space-y-3">
+          <h4>Flex Layout flex-col</h4>
+          <div class="bg-green-300">Content 1</div>
+          <div class="bg-green-300">Content 2</div>
+          <div class="bg-green-300">Content 3</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="flex-row">
+      <h1>Flex layout Flex-row</h1>
+      <div class="bg-green-300">Content 1</div>
+      <div class="bg-green-300">Content 2</div>
+      <div class="bg-green-300">Content 3</div>
+    </div>
+    <br />
+    <div class="flex flex-col md:flex-row">
+      <h1>Flex layout Responsive content</h1>
+      <div class="bg-blue-300">Content 1</div>
+      <div class="bg-blue-300">Content 2</div>
+      <div class="bg-blue-300">Content 3</div>
+    </div>
+    <br />
+    <!--Layout  -->
+    <div>
+      <!-- Flex Grow-->
+      <h3 class="text-bold underline">Layout Types</h3>
+      <h4 class="mx-4 text-bold">Flex Layout</h4>
+      <div class="flex">
+        <div class="flex-grow bg-green-500 p-5">Grows to fill space</div>
+        <div class="flex-none bg-red-500 p-5">Fixed size</div>
+      </div>
+
+      <br />
+      <!-- Flex Shrink -->
+      <div class="flex">
+        <div class="flex-shrink-0 bg-amber-600 p-5">Does not Shrink</div>
+        <div class="flex-shrink bg-blue-600 p-5">Shrink when needed</div>
+      </div>
+      <br />
+      <!-- Flex Basis -->
+      <div class="flex">
+        <div class="basis-1/3 bg-pink-600 p-5">Take 1/3 space</div>
+        <div class="basis-2/3 bg-violet-700 p-5">Take 2/3 space</div>
+      </div>
+    </div>
+    <br />
+    <!-- Grid Layout -->
+    <!-- Place Items -->
+    <div>
+      <h3 class="text-bold underline">Grid Layout</h3>
+      <h4>Place-items</h4>
+      <div class="grid grid-cols-3 gap-3 bg-green-500 place-items-center">
+        <div class="bg-red-400 p-3">div 01</div>
+        <div class="bg-red-400 p-3">div 02</div>
+        <div class="bg-red-400 p-3">div 03</div>
+        <div class="bg-red-400 p-3">div 04</div>
+        <div class="bg-red-400 p-3">div 05</div>
+        <div class="bg-red-400 p-3">div 06</div>
+      </div>
+    </div>
+    <br />
+    <!-- Place content -->
+    <h4>Place-content</h4>
+    <div class="grid h-80 grid-cols-3 gap-3 place-content-center bg-purple-500">
+      <div class="bg-blue-300 p-3">div 01</div>
+      <div class="bg-blue-300 p-3">div 02</div>
+      <div class="bg-blue-300 p-3">div 03</div>
+      <div class="bg-blue-300 p-3">div 04</div>
+      <div class="bg-blue-300 p-3">div 05</div>
+      <div class="bg-blue-300 p-3">div 06</div>
+    </div>
+    <br />
+    <!-- Complex layput -->
+    <div>
+      <h4 class="text-bold underline">Complex Layout</h4>
+      <h5>Using col-span & row-span</h5>
+      <div class="grid grid-cols-3 gap-3">
+        <div class="p-3 border col-span-2 bg-blue-300">Div 01</div>
+        <div class="p-3 border bg-blue-300">Div 02</div>
+        <div class="p-3 border row-span-2 bg-blue-300">Div 03</div>
+        <div class="p-3 border bg-blue-300">Div 04</div>
+        <div class="p-3 border bg-blue-300">Div 05</div>
+        <div class="p-3 border bg-blue-300">Div 06</div>
+      </div>
+    </div>
+  </body>
+</html>
